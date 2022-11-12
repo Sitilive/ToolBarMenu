@@ -1,0 +1,32 @@
+package com.example.mytb
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        return true
+    }
+
+    //Option Item (Saat menu di klik)
+    //Menampilkan Pop-up saat icon toolbar di klik
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.tbBook -> Toast.makeText(this, "Mengklik Book", Toast.LENGTH_LONG).show()
+            R.id.tbNote -> Toast.makeText(this, "Mengklik Note", Toast.LENGTH_LONG).show()
+            R.id.tbSetting -> Toast.makeText(this, "Mengklik Setting", Toast.LENGTH_LONG).show()
+            R.id.tbFeedback -> Toast.makeText(this, "Mengklik Feedback", Toast.LENGTH_LONG).show()
+            R.id.tbClose -> finish()
+        }
+        return true
+    }
+}

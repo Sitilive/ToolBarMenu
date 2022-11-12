@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/tbBook"
+        android:title="My Book"
+        android:icon="@drawable/ic_baseline_book_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/tbNote"
+        android:title="Note"
+        android:icon="@drawable/ic_baseline_note_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/tbSetting"
+        android:title="Setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/tbFeedback"
+        android:title="Feedback"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/tbClose"
+        android:title="Close"
+        app:showAsAction="never"/>
+
+
+
+</menu>
